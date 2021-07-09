@@ -5,22 +5,23 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
 })
 export class ResaltadoDirective {
 
-  constructor( private el:ElementRef ) {
+  constructor( private el: ElementRef ) {
     // console.log("Directiva llamada");
     // el.nativeElement.style.backgroundColor = "yellow";
   }
 
-  @Input("appResaltado") nuevoColor:string;
+  // tslint:disable-next-line:member-ordering
+  @Input('appResaltado') nuevoColor: string;
 
-  @HostListener('mouseenter') mouseEntro(){
+  @HostListener('mouseenter') mouseEntro() {
     this.resaltar( this.nuevoColor || 'yellow' );
   }
 
-  @HostListener('mouseleave') mouseSalio(){
+  @HostListener('mouseleave') mouseSalio() {
     this.resaltar( null );
   }
 
-  private resaltar( color:string ){
+  private resaltar( color: string ) {
     this.el.nativeElement.style.backgroundColor = color;
   }
 

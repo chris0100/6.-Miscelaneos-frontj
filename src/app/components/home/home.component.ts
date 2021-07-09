@@ -28,39 +28,39 @@ export class HomeComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
           AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
 
   constructor() {
-    console.log("constructor");
+    console.log('constructor');
   }
 
   ngOnInit() {
-    console.log("ngOnInit");
+    console.log('ngOnInit');
   }
 
-  ngOnChanges(){
-    console.log("ngOnChanges");
+  ngOnChanges() {
+    console.log('ngOnChanges');
   }
 
-  ngDoCheck(){
-    console.log("ngDoCheck");
+  ngDoCheck() {
+    console.log('ngDoCheck');
   }
 
-  ngAfterContentInit(){
-    console.log("ngAfterContentInit");
+  ngAfterContentInit() {
+    console.log('ngAfterContentInit');
   }
 
-  ngAfterContentChecked(){
-    console.log("ngAfterContentChecked");
+  ngAfterContentChecked() {
+    console.log('ngAfterContentChecked');
   }
 
-  ngAfterViewInit(){
-    console.log("ngAfterViewInit");
+  ngAfterViewInit() {
+    console.log('ngAfterViewInit');
   }
 
-  ngAfterViewChecked(){
-    console.log("ngAfterViewChecked");
+  ngAfterViewChecked() {
+    console.log('ngAfterViewChecked');
   }
 
-  ngOnDestroy(){
-    console.log("ngOnDestroy");
+  ngOnDestroy() {
+    console.log('ngOnDestroy');
   }
 
 }

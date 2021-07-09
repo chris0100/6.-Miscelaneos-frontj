@@ -5,9 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ng-switch.component.html',
   styles: []
 })
+
+
 export class NgSwitchComponent implements OnInit {
 
-  alerta:string = "warning";
+  alerta = 'warning';
 
   constructor() { }
 
